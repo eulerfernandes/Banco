@@ -117,10 +117,10 @@ button:hover {
     /* Largura aumentada para o dashboard */
     margin: 50px auto;
     padding: 30px;
-    background-color: rgba(206, 11, 245, 0.548);
+    background-color: rgba(55, 0, 255, 0.342);
     /* Fundo branco com leve transparência */
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(25, 25, 26, 0.3);
+    box-shadow: 0 10px 40px rgb(214, 7, 241);
 }
 
 /* Estilo das seções do dashboard */
@@ -129,30 +129,31 @@ button:hover {
 .transaction-history {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #2b07f7c7;
+    border: 1px solid #f3f2fac7;
     border-radius: 8px;
     transition: border-color 0.3s, background-color 0.3s;
 }
 
 .balance-section:hover,
 .transaction-section:hover {
-    border-color: #f8f9fa;
-    background-color: #1212138e;
+    border-color: #e60aee;
+    background-color: #bf10eb91;
 }
 
-h2 {
+h2,
+label {
     font-size: 26px;
     /* Tamanho do título maior */
     margin-bottom: 10px;
     font-weight: 600;
-    color: #f5f6f7;
+    color: #f0f0f0;
 }
 
 #account-balance {
     font-size: 30px;
     /* Tamanho do saldo maior */
     font-weight: 700;
-    color: #00f2fe;
+    color: #f3f8f8;
 }
 
 /* Estilo dos campos de transação */
@@ -164,15 +165,15 @@ h2 {
 .transaction-section input {
     width: 100%;
     padding: 12px;
-    border: 2px solid #4facfe;
+    border: 2px solid #3807eb;
     border-radius: 8px;
     margin-bottom: 10px;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .transaction-section input:focus {
-    border-color: #00f2fe;
-    box-shadow: 0 0 5px rgba(0, 242, 254, 0.5);
+    border-color: #f6f7f4;
+    box-shadow: 0 0 5px rgba(246, 247, 245, 0.5);
 }
 
 /* Estilo do botão de logout */
@@ -190,7 +191,7 @@ h2 {
 }
 
 #logout-button:hover {
-    background-color: #ff2b20;
+    background-color: #70070786;
     transform: scale(1.02);
     box-shadow: 0 4px 15px rgba(255, 59, 48, 0.3);
 }
@@ -206,16 +207,17 @@ h2 {
 .transaction-history ul {
     list-style: none;
     padding: 0;
+    color: #e6f0f0;
 }
 
 .transaction-history li {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eef0f5;
     transition: background-color 0.2s, transform 0.2s;
 }
 
 .transaction-history li:hover {
-    background-color: #f7f7f7;
+    background-color: #1707f8;
     transform: translateX(5px);
 }
 
