@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Digital - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Estilos importados do seu CSS -->
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Exibir saldo atual -->
+        <div class="balance-section">
+            <h2>Saldo da Conta</h2>
+            <p id="account-balance">R$ 0,00</p>
+        </div>
+
+        <!-- Seção para depósitos -->
+        <div class="transaction-section">
+            <label for="deposit-amount">Depósito</label>
+            <input type="number" id="deposit-amount" placeholder="Informe o valor" />
+            <button id="deposit-button">Depositar</button>
+        </div>
+
+        <!-- Seção para saques -->
+        <div class="transaction-section">
+            <label for="withdraw-amount">Saque</label>
+            <input type="number" id="withdraw-amount" placeholder="Informe o valor" />
+            <button id="withdraw-button">Sacar</button>
+        </div>
+
+        <!-- Seção para transferências -->
+        <div class="transaction-section">
+            <label for="transfer-amount">Transferência</label>
+            <input type="number" id="transfer-amount" placeholder="Valor a transferir" />
+            <input type="text" id="recipient-name" placeholder="Nome do destinatário" />
+            <button id="transfer-button">Transferir</button>
+        </div>
+
+        <!-- Histórico de transações -->
+        <div class="transaction-history">
+            <h2>Histórico de Transações</h2>
+            <ul id="transaction-list">
+                <!-- As transações serão adicionadas dinamicamente aqui -->
+            </ul>
+        </div>
+
+        <!-- Botão de logout -->
+        <button id="logout-button">Sair</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Certifique-se de que o caminho esteja correto -->
+</body>
+
+</html>

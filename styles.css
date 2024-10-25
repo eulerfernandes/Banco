@@ -1,0 +1,247 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('img/3214030.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e300f88c;
+    line-height: 1.6;
+}
+
+/* Estilo do container de login */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px 30px;
+    background-color: rgba(140, 13, 243, 0.301);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(245, 247, 245, 0.849);
+}
+
+/* Estilos adicionais... */
+
+
+/* Animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo do título do login */
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    /* Tamanho do título maior */
+    font-weight: 600;
+    color: #fefffe;
+}
+
+/* Estilo dos campos de entrada */
+.input-field {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #fcfbfb;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #0c0c0c34;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+.input-field input:focus {
+    border-color: #6a08ebd8;
+    box-shadow: 0 0 5px rgba(184, 10, 228, 0.747);
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0004fa;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #2d0af7;
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgb(248, 247, 248);
+}
+
+/* Estilo da mensagem de erro */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Estilo do container do dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    /* Largura aumentada para o dashboard */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(206, 11, 245, 0.548);
+    /* Fundo branco com leve transparência */
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(25, 25, 26, 0.3);
+}
+
+/* Estilo das seções do dashboard */
+.balance-section,
+.transaction-section,
+.transaction-history {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #2b07f7c7;
+    border-radius: 8px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.balance-section:hover,
+.transaction-section:hover {
+    border-color: #f8f9fa;
+    background-color: #1212138e;
+}
+
+h2 {
+    font-size: 26px;
+    /* Tamanho do título maior */
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #f5f6f7;
+}
+
+#account-balance {
+    font-size: 30px;
+    /* Tamanho do saldo maior */
+    font-weight: 700;
+    color: #00f2fe;
+}
+
+/* Estilo dos campos de transação */
+.transaction-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-section input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4facfe;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.transaction-section input:focus {
+    border-color: #00f2fe;
+    box-shadow: 0 0 5px rgba(0, 242, 254, 0.5);
+}
+
+/* Estilo do botão de logout */
+#logout-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff3b30;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+#logout-button:hover {
+    background-color: #ff2b20;
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(255, 59, 48, 0.3);
+}
+
+/* Estilo da lista de transações */
+.transaction-history {
+    max-height: 200px;
+    /* Limitar a altura */
+    overflow-y: auto;
+    /* Adicionar rolagem */
+}
+
+.transaction-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-history li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.transaction-history li:hover {
+    background-color: #f7f7f7;
+    transform: translateX(5px);
+}
+
+.transaction-history li:last-child {
+    border-bottom: none;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+
+    .login-container,
+    .dashboard-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 24px;
+        /* Ajuste no tamanho do texto para telas menores */
+    }
+}
+
+@media (max-width: 400px) {
+    .transaction-section input {
+        margin-bottom: 10px;
+    }
+}
